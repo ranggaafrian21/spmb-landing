@@ -1,0 +1,15 @@
+services:
+  spmb-landing:
+    container_name: spmb-landing-app
+    image: ${IMAGE_NAME:-spmb-landing}:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-5029}:80"
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
