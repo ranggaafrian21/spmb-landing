@@ -3,17 +3,17 @@ import { MenuOutlined, CloseOutlined } from '@ant-design/icons'
 import logoImg from '../assets/qrion spmb 1.png'
 
 const NAV_LINKS = [
-  { label: 'Beranda',   href: '#hero'      },
-  { label: 'Fitur',     href: '#features'  },
-  { label: 'Cara Kerja',href: '#steps'     },
+  { label: 'Beranda', href: '#hero' },
+  { label: 'Fitur', href: '#features' },
+  { label: 'Cara Kerja', href: '#steps' },
   { label: 'Testimoni', href: '#testimoni' },
-  { label: 'Harga',     href: '#harga'     },
-  { label: 'FAQ',       href: '#faq'       },
+  { label: 'Harga', href: '#harga' },
+  { label: 'FAQ', href: '#faq' },
 ]
 
 export default function Navbar() {
-  const [scrolled,   setScrolled]   = useState(false)
-  const [menuOpen,   setMenuOpen]   = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [activeHref, setActiveHref] = useState('#hero')
 
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hide-sm" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-            <a href="https://jurnal.qrion.id/Login"
+            <a href="https://ppdb.qrion.id/Login"
               target="_blank" rel="noopener noreferrer"
               style={{
                 fontSize: 14, fontWeight: 600, textDecoration: 'none',
@@ -80,7 +80,7 @@ export default function Navbar() {
               onMouseEnter={e => { e.currentTarget.style.color = '#1DB88E'; e.currentTarget.style.background = '#F7FAFA' }}
               onMouseLeave={e => { e.currentTarget.style.color = '#4A5568'; e.currentTarget.style.background = 'transparent' }}
             >Login</a>
-            <a href="https://jurnal.qrion.id/Login/register"
+            <a href="https://ppdb.qrion.id/Login/register"
               className="btn btn-primary" style={{ padding: '9px 20px', fontSize: 13, borderRadius: 9 }}>
               Register
             </a>
