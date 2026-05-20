@@ -1,14 +1,14 @@
-﻿import { ArrowRightOutlined } from '@ant-design/icons'
+import { ArrowRightOutlined } from '@ant-design/icons'
 
 // Ambil beberapa logo sekolah untuk social proof
-const logoModules = import.meta.glob('../assets/school/*.png', { eager: true, as: 'url' })
+const logoModules = import.meta.glob<string>('../assets/school/*.png', { eager: true, import: 'default' })
 const schoolLogos: string[] = Object.keys(logoModules)
   .sort((a, b) => {
     const n = (s: string) => parseInt(s.match(/(\d+)\.png$/)?.[1] ?? '0')
     return n(a) - n(b)
   })
   .slice(0, 5)
-  .map(k => logoModules[k] as string)
+  .map(k => logoModules[k])
 
 const BADGES = [
   { icon: <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>, text: 'Setup dalam 5 Menit' },

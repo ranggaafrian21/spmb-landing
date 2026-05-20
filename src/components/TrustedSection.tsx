@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { FadeUp } from './AnimatedSection'
 
 // Import semua logo dari src/assets/school/ menggunakan Vite glob import
-const logoModules = import.meta.glob('../assets/school/*.png', { eager: true, as: 'url' })
+const logoModules = import.meta.glob<string>('../assets/school/*.png', { eager: true, import: 'default' })
 
 // Urutkan berdasarkan nama file (43.png, 44.png, dst)
 const allLogos: string[] = Object.keys(logoModules)
@@ -11,7 +11,7 @@ const allLogos: string[] = Object.keys(logoModules)
     const numB = parseInt(b.match(/(\d+)\.png$/)?.[1] ?? '0')
     return numA - numB
   })
-  .map(key => logoModules[key] as string)
+  .map(key => logoModules[key])
 
 const row1 = allLogos.slice(0, Math.ceil(allLogos.length / 2))
 const row2 = allLogos.slice(Math.ceil(allLogos.length / 2))
