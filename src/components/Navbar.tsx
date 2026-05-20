@@ -114,14 +114,14 @@ export default function Navbar() {
             )
           })}
           <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
-            <a href="https://jurnal.qrion.id/Login"
+            <a href="https://ppdb.qrion.id/Login"
               target="_blank" rel="noopener noreferrer"
               style={{
                 flex: 1, textAlign: 'center', padding: '11px 0',
                 fontSize: 14, fontWeight: 600, color: '#1DB88E',
                 border: '1.5px solid #1DB88E', borderRadius: 9, textDecoration: 'none',
               }}>Masuk</a>
-            <a href="https://jurnal.qrion.id/Login/register"
+            <a href="https://ppdb.qrion.id/Login/register"
               className="btn btn-primary" style={{ flex: 1, justifyContent: 'center', borderRadius: 9 }}>
               Coba Gratis
             </a>
