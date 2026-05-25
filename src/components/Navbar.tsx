@@ -71,7 +71,7 @@ export default function Navbar() {
 
           {/* Desktop CTA */}
           <div className="hide-sm" style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0 }}>
-            <a href="https://ppdb.qrion.id/Login"
+            <a href="https://spmb.qrion.id/Login"
               target="_blank" rel="noopener noreferrer"
               style={{
                 fontSize: 14, fontWeight: 600, textDecoration: 'none',
@@ -80,7 +80,7 @@ export default function Navbar() {
               onMouseEnter={e => { e.currentTarget.style.color = '#1DB88E'; e.currentTarget.style.background = '#F7FAFA' }}
               onMouseLeave={e => { e.currentTarget.style.color = '#4A5568'; e.currentTarget.style.background = 'transparent' }}
             >Login</a>
-            <a href="https://ppdb.qrion.id/Login/register"
+            <a href="https://spmb.qrion.id/Login/register"
               className="btn btn-primary" style={{ padding: '9px 20px', fontSize: 13, borderRadius: 9 }}>
               Register
             </a>
@@ -114,14 +114,14 @@ export default function Navbar() {
             )
           })}
           <div style={{ display: 'flex', gap: 10, marginTop: 16 }}>
-            <a href="https://ppdb.qrion.id/Login"
+            <a href="https://spmb.qrion.id/Login"
               target="_blank" rel="noopener noreferrer"
               style={{
                 flex: 1, textAlign: 'center', padding: '11px 0',
                 fontSize: 14, fontWeight: 600, color: '#1DB88E',
                 border: '1.5px solid #1DB88E', borderRadius: 9, textDecoration: 'none',
               }}>Masuk</a>
-            <a href="https://ppdb.qrion.id/Login/register"
+            <a href="https://spmb.qrion.id/Login/register"
               className="btn btn-primary" style={{ flex: 1, justifyContent: 'center', borderRadius: 9 }}>
               Coba Gratis
             </a>

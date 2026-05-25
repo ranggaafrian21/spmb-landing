@@ -114,7 +114,7 @@ export default function Steps() {
         </div>
 
         <div className="reveal" style={{ textAlign: 'center', marginTop: 40 }}>
-          <a href="https://ppdb.qrion.id/Login/register"
+          <a href="https://spmb.qrion.id/Login/register"
             className="btn btn-primary" style={{ fontSize: 14, padding: '13px 32px' }}>
             Mulai SPMB Digital Sekarang →
           </a>

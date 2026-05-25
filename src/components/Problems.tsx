@@ -134,7 +134,7 @@ export default function Problems() {
                 hingga pengumuman — dalam satu platform yang mudah digunakan.
               </p>
             </div>
-            <a href="https://ppdb.qrion.id/Login/register"
+            <a href="https://spmb.qrion.id/Login/register"
               target="_blank" rel="noopener noreferrer"
               className="btn" style={{ background: '#fff', color: '#1DB88E', padding: '12px 24px', flexShrink: 0, fontWeight: 700, position: 'relative', zIndex: 1 }}>
               Mulai Sekarang →
